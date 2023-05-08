@@ -27,3 +27,33 @@ variable "private_subnet_count" {
   type        = number
   description = "How many private subnets to create"
 }
+
+variable "aws_lb" {
+  type        = number
+  default     = 1
+  description = "load balancer"
+}
+
+variable "aws_lb_listener" {
+  type        = number
+  default       = 1
+  description = "number of listners"
+}
+
+variable "ec2_sg" {
+  type        = number
+  default     = 1
+  description = "ec2 security group"
+}
+
+variable "ec2_instance_id" {
+  type        = number
+  default     = 2
+  description = "ec2 instance id"
+}
+
+variable "alb_sg" {
+  type        = number
+  default     = 1
+  description = "alb security group"
+}
